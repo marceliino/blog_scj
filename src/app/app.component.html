@@ -1,0 +1,74 @@
+<div class="container-fluid">
+  <div class="row" id="main-row">
+    <div class="col-md-4 sidebar" id="menu">
+      <header>
+        <div id="menu-titulo">
+          <h1><u>Atividade 29SCJ</u></h1>
+          <h3>Aprendendo na Prática</h3>
+          <ul id="">
+            <li>RM32005 - Marcelo Souza da SiLva</li>
+            <li>RM31838 - Ricardo Leonardo Pansonato</li>
+          </ul>
+        </div>
+        <nav class="navbar navbar-inverse navbar-toggleable-sm" id="menu-links">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-links-interno">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand hidden-md-up" href="#">Menu</a>
+          <div class="navbar-collapse collapse" id="menu-links-interno">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#sobre-mim">Sobre Nós</a>
+              <a class="nav-item nav-link" href="#artigos">Artigos</a>
+              <a class="nav-item nav-link" href="#contato">Contato</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="col-md-8 offset-md-4 bg-primary" id="conteudo">
+      <div class="col-sm-12">
+        <article id="sobre-mim" class="row">
+          <h1>Sobre nós</h1>
+          <div>
+            Programadores Java em Busca de novos conhecimentos e desafios.
+            Alunos do Curso MBA em Desenvolvimentode Aplicações Java SOA e Internet das Coisas.
+            Esperamos finalizar o curso com novos horizontes e muitos conhecimentos para colocar em prática no mercado de trabalho.
+          </div>
+        </article>
+      </div>
+      <section id="artigos" class="row">
+        <div class="col-md-6">
+          <div class="p-3"></div>
+          <article id="card artigo">
+            <div class="card-block">
+              <h2 class="card-title">Artigo JPA</h2>
+              <p class="card-text">
+                Java Persistence API (ou simplesmente JPA) é uma API padrão da linguagem Java
+                 que descreve uma interface comum para frameworks de persistência de dados. 
+                 A JPA define um meio de mapeamento objeto-relacional para objetos Java simples e comuns (POJOs), 
+                 denominados beans de entidade..
+              </p>
+              <button class="btn secondary btn-sm">Ler mais...</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3"></div>
+          <article id="card artigo">
+            <div class="card-block">
+              <h2 class="card-title">Artigo JDBC</h2>
+              <p class="card-text">
+                Java Database Connectivity ou JDBC é um conjunto de classes e interfaces (API) escritas em Java 
+                que fazem o envio de instruções SQL para qualquer banco de dados relacional; 
+                Api de baixo nível e base para api’s de alto nível; Amplia o que você pode fazer com Java;
+                 Possibilita o uso de bancos de dados já instalados; Para cada banco de dados há um driver JDBC .
+              </p>
+              <button class="btn btn-secondary btn-sm">Ler mais...</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <app-contato></app-contato>
+    </div>
+  </div>
+</div>
