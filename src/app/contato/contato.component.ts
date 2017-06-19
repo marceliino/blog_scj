@@ -24,10 +24,7 @@ export class ContatoComponent implements OnInit {
               'minlength': 'você precisa informar um texto com no mínimo 5 caracteres',
               'maxlength': 'o limite do texto é de 100 caracteres'}
   };
-  constructor(
-    private fb: FormBuilder, 
-    private http: Http, 
-    private zone: NgZone ) { }
+  constructor(private fb: FormBuilder, private http: Http, private zone: NgZone ) { }
   ngOnInit() {
     this.buildForm();
   }
