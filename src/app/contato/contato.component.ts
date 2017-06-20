@@ -1,7 +1,5 @@
 import { Component, OnInit, NgZone } from '@angular/core';
-
 import { FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms';
-
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
