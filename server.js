@@ -1,8 +1,9 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-const dbFolder = __dirname + '/db';
-const contatosDbPath = dbFolder + '/contatos.json';
+const dbFolder = 'c:\db';
+const contatosDbPath = dbFolder + '\\contatos.json';
 
 //antes do servidor iniciar, verifica se a pasta db existe
 //se não existe, cria
@@ -14,11 +15,11 @@ if(!fs.existsSync(dbFolder)){
 var tryRead = function(path, callback){
     fs.readFile(path, 'utf8', function(err, contatos){
         if(err)
-            return callback;
+            return callback([]);
         var contatosJSON = [];
-        try{
+     try{
             contatosJSON = JSON.parse(contatos);
-        }cath(error){ }
+        }catch(error){ }
 
         return callback(contatosJSON);
     });
@@ -53,5 +54,5 @@ app.get('*', function (req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function(){
-    console.jog('escutando na porta 3000');
+    console.log('escutando na porta 3000');
 });

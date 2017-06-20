@@ -39,8 +39,7 @@ export class ContatoComponent implements OnInit {
     this.onValueChanged();
   }
   onValueChanged(data?: any){
-    if(!this.contatoForm)
-      return;
+    if(!this.contatoForm) return;
     this.listaErros = [];
     for(const field in this.contatoForm.controls){
       var control = this.contatoForm.get(field);
