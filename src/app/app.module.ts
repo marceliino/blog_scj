@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,16 +9,22 @@ import { ContatoComponent } from './contato/contato.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpModule } from '@angular/http';
+import { ArtigoComponent } from './artigo/artigo.component';
+import { routes } from './router';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContatoComponent
+    ContatoComponent,
+    HomeComponent,
+    ArtigoComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule, RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

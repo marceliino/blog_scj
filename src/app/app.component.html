@@ -26,49 +26,7 @@
       </header>
     </div>
     <div class="col-md-8 offset-md-4" id="conteudo">
-      <div class="col-sm-12">
-        <article id="sobre-mim" class="row">
-          <h1>Sobre nós</h1>
-          <div>
-            Programadores Java em Busca de novos conhecimentos e desafios.
-            Alunos do Curso MBA em Desenvolvimentode Aplicações Java SOA e Internet das Coisas.
-            Esperamos finalizar o curso com novos horizontes e muitos conhecimentos para colocar em prática no mercado de trabalho.
-          </div>
-        </article>
-      </div>
-      <section id="artigos" class="row">
-        <div class="col-md-6">
-          <div class="p-3"></div>
-          <article id="card artigo">
-            <div class="card-block">
-              <h2 class="card-title">Artigo JPA</h2>
-              <p class="card-text">
-                Java Persistence API (ou simplesmente JPA) é uma API padrão da linguagem Java
-                 que descreve uma interface comum para frameworks de persistência de dados. 
-                 A JPA define um meio de mapeamento objeto-relacional para objetos Java simples e comuns (POJOs), 
-                 denominados beans de entidade..
-              </p>
-              <button class="btn secondary btn-sm">Ler mais...</button>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3"></div>
-          <article id="card artigo">
-            <div class="card-block">
-              <h2 class="card-title">Artigo JDBC</h2>
-              <p class="card-text">
-                Java Database Connectivity ou JDBC é um conjunto de classes e interfaces (API) escritas em Java 
-                que fazem o envio de instruções SQL para qualquer banco de dados relacional; 
-                Api de baixo nível e base para api’s de alto nível; Amplia o que você pode fazer com Java;
-                 Possibilita o uso de bancos de dados já instalados; Para cada banco de dados há um driver JDBC .
-              </p>
-              <button class="btn btn-secondary btn-sm">Ler mais...</button>
-            </div>
-          </article>
-        </div>
-      </section>
-      <app-contato></app-contato>
+      <router-outlet>
     </div>
   </div>
 </div>
