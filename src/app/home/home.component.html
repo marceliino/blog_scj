@@ -1,0 +1,23 @@
+<div class="col-sm-12">
+  <article id="sobre-mim" class="row">
+    <h1>Sobre nós</h1>
+    <div>
+      Programadores Java em Busca de novos conhecimentos e desafios.
+      Alunos do Curso MBA em Desenvolvimentode Aplicações Java SOA e Internet das Coisas.
+      Esperamos finalizar o curso com novos horizontes e muitos conhecimentos para colocar em prática no mercado de trabalho.
+    </div>
+  </article>
+</div>
+<section id="artigos" class="row">
+  <div class="col-md-6">
+    <div class="p-3"></div>
+    <article id="card artigo">
+      <div class="card-block">
+        <h2 class="card-title">{{artigo.titulo}}</h2>
+        <p class="card-text">{{artigo.resumo}}</p>
+        <a class="btn btn-primary" [routerLink]="['/artigo',artigo.id]">ler mais</a>
+      </div>
+    </article>
+  </div>        
+</section>
+<app-contato></app-contato>
