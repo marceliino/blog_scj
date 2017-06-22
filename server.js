@@ -57,9 +57,20 @@ app.listen(process.env.PORT || 3000, function(){
     console.log('escutando na porta 3000');
 });
 
+/*
 app.get('/api/artigos', function(req, res) {
     const artigosDbPath = dbFolder + '/artigos.json';
     tryRead(artigosDbPath, function(artigos) {
         res.status(200).json(artigos);
+    });
+});*/
+app.get('/api/artigos', function(req, res) {
+    const artigosDbPath = dbFolder + '/artigos.json';
+    tryRead(artigosDbPath, function(artigos) {
+
+        var artigo = artigos.filter((artigo) => {
+            return parseInt(artigo.id) == parseInt(req.params[0]);
+        });
+        res.status(200).json(artigo[0]);
     });
 });
