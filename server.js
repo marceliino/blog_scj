@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-const dbFolder = 'c:\db';
+const dbFolder = 'd:/db';
 const contatosDbPath = dbFolder + '\\contatos.json';
 
 //antes do servidor iniciar, verifica se a pasta db existe

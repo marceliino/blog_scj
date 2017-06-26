@@ -9,7 +9,7 @@ function runScript() {
         canvas.width = video.videoWidth * scale;
         canvas.height = video.videoHeight * scale;
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-        var img = document.createEvent("img");
+        var img = document.createElement("img");
         img.src = canvas.toDataURL();
         output.prepend(img);
     };
