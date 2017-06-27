@@ -1,0 +1,40 @@
+<div class="col-sm-12">
+  <p> Veja os campos abaixo: </p>
+  <form action="">
+    <fieldset>
+    <legend>Detalhes pessoais</legend>
+    <div class="form-group">
+      <label>Nome</label>
+      <input id="given-name" class="form-control" name="given-name"  type="text" placeholder="nome" required>
+      //placeholder </div>
+    <div class="form-group">
+      <label>Data de Nascimento</label>
+      <input id="data" class="form-control" name="data"  type="date" required>
+      //data, requerida </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" id="email" placeholder="fulano@mail.com" name="email" required>
+    </div>
+    <div class="form-group">
+      <label>URL</label>
+      <input id="url" class="form-control" name="url"  type="url" required>
+    </div>
+    <div class="form-group">
+      <label>Telefone</label>
+      <input id="phone" class="form-control" name="phone"  type="tel" pattern="[0-9]{4}-[0-9]{4}" placeholder="XXXX-XXXX" required>
+    </div>
+    <div class="form-group">
+      <label>Cidade</label>
+      <br>
+      <select name="cidades">
+        <option value="SP">São Paulo</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="RS">Rio Grande do Sul</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-secondary btn-sm" onClick="alert('Hello World!')">::Click Me::</button>
+    <button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+    </fieldset>
+  </form>
+</div>
